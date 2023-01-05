@@ -1,4 +1,4 @@
-import{_ as s,c as a,o as n,a as e}from"./app.2dc5d804.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"test.md"}'),l={name:"test.md"},t=e(`<div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-palenight"><code><span class="line"><span style="color:#A6ACCD;">function doSome() {</span></span>
+import{_ as s,c as a,o as n,b as e}from"./app.99825b58.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"test.md"}'),l={name:"test.md"},t=e(`<div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-palenight"><code><span class="line"><span style="color:#A6ACCD;">function doSome() {</span></span>
 <span class="line"><span style="color:#A6ACCD;">  // do some</span></span>
 <span class="line"><span style="color:#A6ACCD;">}</span></span>
 <span class="line"><span style="color:#A6ACCD;">aaa</span></span>
