@@ -14,6 +14,9 @@ hero:
     # alt: YYG Admin UI
   actions:
     - theme: brand
+      text: test
+      link: /test/test1
+    - theme: brand
       text: 快速开始
       link: /test
     - theme: alt
