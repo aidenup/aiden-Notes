@@ -6,10 +6,10 @@ export default defineConfig({
   base: '/aiden-Notes/',
   themeConfig: {
     nav: [
-      { text: '学习笔记', link: '/studyDoc/guide' },
-      { text: '开发文档', link: '/project/guide' },
+      { text: '📒 学习笔记', link: '/studyDoc/guide' },
+      { text: '📖 开发文档', link: '/project/guide' },
       {
-        text: '深度学习',
+        text: '👓 深度学习',
         items: [
           {
             text: 'vue3 源码',
@@ -31,8 +31,8 @@ export default defineConfig({
           }
         ]
       },
-      { text: '备忘录', link: '/memo/guide' },
-      { text: '编程工具', link: '/tools/guide' },
+      { text: '📝 备忘录', link: '/memo/guide' },
+      { text: '🔧 编程工具', link: '/tools/guide' },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aidenup' },
@@ -56,11 +56,18 @@ export default defineConfig({
           ],
         }
       ],
+      '/tools/': [
+        {
+          items: [
+            { text: 'algolia', link: 'tools/algolia'}
+          ]
+        }
+      ]
     },
     algolia: {
-      appId: 'D0OLMUXOC6', // 需要替换
-      apiKey: '79e87f1058bc12da45395eacce5d28c0', // 需要替换
-      indexName: 'aidenDocs', // 需要替换
+      appId: 'D0OLMUXOC6',
+      apiKey: '79e87f1058bc12da45395eacce5d28c0',
+      indexName: 'aidenDocs',
       placeholder: '请输入关键词',
       buttonText: '搜索',
     },
