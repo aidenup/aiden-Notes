@@ -5,6 +5,7 @@ export default defineConfig({
   description: 'notion',
   base: '/aiden-Notes/',
   themeConfig: {
+    outline: 'deep',
     nav: [
       { text: '📒 学习笔记', link: '/studyDoc/guide' },
       { text: '📖 开发文档', link: '/project/guide' },
