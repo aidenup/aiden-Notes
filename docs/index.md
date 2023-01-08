@@ -1,37 +1,43 @@
 ---
 layout: home
 
-title: 选项卡标题
-titleTemplate: 选项卡描述
+title: AidenDocs
+titleTemplate: Tab description
 editLink: true
 lastUpdated: true
 hero:
-  name: 组件库名称
-  text: 组件库文本
-  tagline: 组件库副标题描述
+  name: AidenDocs
+  text: Study notes
+  tagline: 每天都要有收获
   # image:
     # src: /logo.png
     # alt: YYG Admin UI
   actions:
     - theme: brand
-      text: test
-      link: /test/test1
-    - theme: brand
       text: 快速开始
-      link: /test
+      link: /project/chat
     - theme: alt
-      text: 组件
-      link: https://element-plus.gitee.io/zh-CN/component/message.html#message-%E9%85%8D%E7%BD%AE%E9%A1%B9
+      text: 关于我
+      link: https://github.com/aidenup
 features:
   - icon: 🔨
-    title: 功能/特点 1
-    details: 功能/特点 1 具体描述信息。
+    title: 算法
+    details: 世界的尽头时算法
   - icon: 🧩
-    title: 功能/特点 2
-    details: 功能/特点 2 具体描述信息。
+    title: 项目开发文档
+    details: 记录项目开发流程
   - icon: ✈️
-    title: 功能/特点 3。
-    details: 功能/特点 3 具体描述信息。
+    title: 学习笔记
+    details: 记录所学的知识
+  - icon: 📒
+    title: 深度学习
+    details: 包括学习vue源码，ts类型体操等比较深层次的东西
+  - icon: 🚚
+    title: 备忘录
+    details: 将日常开发中遇到的问题做一份备忘录，方便查阅
+  - icon: 🔧
+    title: 编程工具
+    details: 归纳一些编程相关工具与网站，提高效率
 ---
 
 

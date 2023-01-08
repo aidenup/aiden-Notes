@@ -1,88 +1,73 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'notion',
-  description: 'just playing around.',
+  title: 'AidenDocs',
+  description: 'notion',
   base: '/aiden-Notes/',
-  // themeConfig: {
-  //   nav: [
-  //     { text: 'Guide', link: '/guide' },
-  //     // {
-  //     //   text: 'Dropdown Menu',
-  //     //   items: [
-  //     //     {
-  //     //       // Title for the section.
-  //     //       text: 'Section A Title',
-  //     //       items: [
-  //     //         { text: 'Section A Item A', link: '...' },
-  //     //         { text: 'Section B Item B', link: '...' },
-  //     //         { text: 'Section B Item B', link: '...' },
-  //     //         { text: 'Section B Item B', link: '...' },
-  //     //       ],
-            
-  //     //     },
-  //     //     {
-  //     //       text: 'Section2 A Title',
-  //     //       items: [
-  //     //         { text: 'Section A Item A', link: '...' },
-  //     //         { text: 'Section B Item B', link: '...' },
-  //     //         { text: 'Section B Item B', link: '...' },
-  //     //         { text: 'Section B Item B', link: '...' },
-  //     //       ]
-  //     //     }
-  //     //   ]
-  //     // },
-  //     // {
-  //     //   text: 'Dropdown Menu',
-  //     //   items: [
-  //     //     {
-  //     //       // You may also omit the title.
-  //     //       items: [
-  //     //         { text: 'Section A Item A', link: '...' },
-  //     //         { text: 'Section B Item B', link: '...' }
-  //     //       ]
-  //     //     }
-  //     //   ]
-  //     // }
-  //   ],
-  //   socialLinks: [
-  //     { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-  //     { icon: 'twitter', link: '...' },
-  //     // You can also add custom icons by passing SVG as string:
-  //     {
-  //       icon: {
-  //         svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg>'
-  //       },
-  //       link: '...'
-  //     }
-  //   ],
-  //   sidebar: [
-  //     // {
-  //     //   text: 'Section Title A',
-  //     //   collapsible: true,
-  //     //   collapsed: true,
-  //     //   items: [
-  //     //     { text: 'Item A', link: '/item-a' },
-  //     //     { text: 'Item B', link: '/item-b' },
-          
-  //     //   ]
-  //     // },
-  //     // {
-  //     //   text: 'Section Title B',
-  //     //   items: [
-  //     //     { text: 'Item C', link: '/item-c' },
-  //     //     { text: 'Item D', link: '/item-d' },
-         
-  //     //   ]
-  //     // }
-  //   ],
-  //   editLink: {
-  //     pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path'
-  //   }
-  // },
-  // lastUpdated: true,
-  // footer: {
-  //   message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
-  //   copyright: 'Copyright © 2019-present <a href="https://github.com/yyx990803">Evan You</a>'
-  // }
+  themeConfig: {
+    nav: [
+      { text: '学习笔记', link: '/studyDoc/guide' },
+      { text: '开发文档', link: '/project/guide' },
+      {
+        text: '深度学习',
+        items: [
+          {
+            text: 'vue3 源码',
+            items: [
+              {
+                text: 'mini vue3',
+                link: '/theory/vue3/guide'
+              }
+            ]
+          },
+          {
+            text: 'TS',
+            items: [
+              {
+                text: 'ts类型体操',
+                link: '/theory/ts/guide'
+              }
+            ]
+          }
+        ]
+      },
+      { text: '备忘录', link: '/memo/guide' },
+      { text: '编程工具', link: '/tools/guide' },
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/aidenup' },
+      { icon: 'twitter', link: 'https://twitter.com/aiden98289211' },
+    ],
+    sidebar: {
+      '/theory/vue3': [
+        {
+          text: 'Guide',
+          items: [
+            { text: 'index', link: 'theory/vue3/guide'},
+            { text: 'test', link: 'theory/vue3/test'},
+          ],  
+        },
+      ],
+      '/theory/ts': [
+        {
+          text: 'Guide',
+          items: [
+            { text: 'index', link: 'theory/ts/guide'},
+          ],
+        }
+      ],
+    },
+    algolia: {
+      appId: 'D0OLMUXOC6', // 需要替换
+      apiKey: '79e87f1058bc12da45395eacce5d28c0', // 需要替换
+      indexName: 'aidenDocs', // 需要替换
+      placeholder: '请输入关键词',
+      buttonText: '搜索',
+    },
+    footer: {
+      message: 'test',
+      copyright: 'test'
+    }
+  },
+  lastUpdated: true,
 })

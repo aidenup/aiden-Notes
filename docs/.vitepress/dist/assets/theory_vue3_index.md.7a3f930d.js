@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a as n}from"./app.a0e2d32f.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"theory/vue3/index.md","lastUpdated":null}'),o={name:"theory/vue3/index.md"},s=n("p",null,"index",-1),r=[s];function c(d,i,_,l,p,u){return a(),t("div",null,r)}const h=e(o,[["render",c]]);export{f as __pageData,h as default};
