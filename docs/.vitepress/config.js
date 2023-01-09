@@ -7,7 +7,15 @@ export default defineConfig({
   themeConfig: {
     outline: 'deep',
     nav: [
-      { text: '📒 学习笔记', link: '/studyDoc/guide' },
+      { 
+        text: '📒 学习笔记', 
+        items: [
+          {
+            text: '算法',
+            link: '/studyDoc/algorithm/guide'
+          }
+        ]
+      },
       { text: '📖 开发文档', link: '/project/guide' },
       {
         text: '👓 深度学习',
@@ -61,6 +69,14 @@ export default defineConfig({
         {
           items: [
             { text: 'algolia', link: 'tools/algolia'}
+          ]
+        }
+      ],
+      '/studyDoc/algorithm': [
+        {
+          items: [
+            { text: '导读', link: '/studyDoc/algorithm/guide'},
+            { text: '二分查找', link: '/studyDoc/algorithm/array/Binary'}
           ]
         }
       ]
