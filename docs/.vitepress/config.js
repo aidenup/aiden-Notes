@@ -85,6 +85,7 @@ export default defineConfig({
         {
           items: [
             { text: '导读', link: '/essay/guide'},
+            { text: '2022年终总结', link: '/essay/2022'},
             { text: 'vue3 hook useList', link: '/essay/useList'}
           ]
         }
