@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as s,a}from"./app.e30fd660.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"theory/vue3/test.md","lastUpdated":1673270251000}'),o={name:"theory/vue3/test.md"},r=a("p",null,"test",-1),n=[r];function c(_,d,p,i,l,m){return s(),e("div",null,n)}const h=t(o,[["render",c]]);export{f as __pageData,h as default};
