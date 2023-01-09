@@ -41,6 +41,7 @@ export default defineConfig({
         ]
       },
       { text: '📝 备忘录', link: '/memo/guide' },
+      { text: '✍️ 随笔', link: '/essay/guide' },
       { text: '🔧 编程工具', link: '/tools/guide' },
     ],
     socialLinks: [
@@ -77,6 +78,14 @@ export default defineConfig({
           items: [
             { text: '导读', link: '/studyDoc/algorithm/guide'},
             { text: '二分查找', link: '/studyDoc/algorithm/array/Binary'}
+          ]
+        }
+      ],
+      '/essay': [
+        {
+          items: [
+            { text: '导读', link: '/essay/guide'},
+            { text: 'vue3 hook useList', link: '/essay/useList'}
           ]
         }
       ]
