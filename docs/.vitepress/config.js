@@ -16,7 +16,14 @@ export default defineConfig({
           }
         ]
       },
-      { text: '📖 开发文档', link: '/project/guide' },
+      { text: '📖 开发文档',
+        items: [
+          {
+            text: 'chat',
+            link: '/project/chat/guide.md'
+          }
+        ]
+      },
       {
         text: '👓 深度学习',
         items: [
@@ -64,6 +71,14 @@ export default defineConfig({
           items: [
             { text: 'index', link: 'theory/ts/guide'},
           ],
+        }
+      ],
+      '/project/chat/': [
+        {
+          items: [
+            { text: '简介', link: '/project/chat/guide'},
+            { text: '更新器', link: '/project/chat/uploder'}
+          ]
         }
       ],
       '/tools/': [
