@@ -423,9 +423,29 @@ yarn release [patch]
 ```
 
 ### 常见问题
-添加uploder 后本地构建后报错，尚未解决……
+添加uploder 后本地构建后报错，~~尚未解决……~~
 ```
 Deriving a key from the password and decrypting the secret key... done
        Error The updater secret key from `TAURI_PRIVATE_KEY` does not match the public key defined in `tauri.conf.json > tauri > updater > pubkey`.
  ELIFECYCLE  Command failed with exit code 1.
+```
+出现这种情况是由于本地没有配置环境变量导致
+> mac 中配置环境变量
+1. 终端输入 `sudo vim ~/.bash_profile` 回车打开编辑器
+2. 编辑环境变量，将私钥添加到value 中
+    ```
+    # tauri
+    export TAURI_PRIVATE_KEY="dW50cnVzdGVxxxx……"
+    ```
+3. 配置完成后报错并退出编辑器 
+4. 终端运行 `source ~/.bash_profile` 使配置文件生效
+
+执行tauri 构建命令 查看环境变量是否生效  
+如果没有生效尝试重启电脑
+
+构建成功后显示
+```
+Deriving a key from the password and decrypting the secret key... done
+        Info 1 updater archive at:
+        Info         /Users/allez/myCode/project/tauri/chat/src-tauri/target/release/bundle/macos/chat.app.tar.gz.sig
 ```
