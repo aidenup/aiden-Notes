@@ -449,3 +449,32 @@ Deriving a key from the password and decrypting the secret key... done
         Info 1 updater archive at:
         Info         /Users/allez/myCode/project/tauri/chat/src-tauri/target/release/bundle/macos/chat.app.tar.gz.sig
 ```
+
+## 其他更新选项
+
+### Javascript API
+在javascript 中检测是否有更新
+
+::: warning
+注意！需要在 tauri 配置中禁用内置对话框；否则，javascript API 将无法工作。
+`tauri.config.json` 中`updater` 下的dialog 设置成false
+:::
+``` js
+import { checkUpdate, installUpdate } from '@tauri-apps/api/updater'
+import { relaunch } from '@tauri-apps/api/process'
+
+const uploder = async () => {
+  try {
+    const { shouldUpdate, manifest } = await checkUpdate()
+    if (shouldUpdate) {
+      // display dialog
+      await installUpdate()
+      // install complete, restart the app
+      await relaunch()
+    }
+  } catch (error) {
+    console.log(error)
+  }
+}
+```
+
