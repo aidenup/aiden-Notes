@@ -15,7 +15,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /project/chat
+      link: /essay/guide
     - theme: alt
       text: 关于我
       link: https://github.com/aidenup
