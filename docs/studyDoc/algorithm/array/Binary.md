@@ -47,3 +47,26 @@ function search(nums, target) {
   return -1
 }
 ```
+
+
+#### rust 版本 
+``` rust
+impl Solution {
+    pub fn search(nums: Vec<i32>, target: i32) -> i32 {
+        let mut left = 0 as i32;
+        let mut right = (nums.len() - 1) as i32;
+        let mut mid = 0;
+        while left <= right {
+            mid = left + ((right - left) >> 1);
+            if *nums.get(mid as usize).unwrap() >target {
+                right = mid - 1;
+            } else if *nums.get(mid as usize).unwrap() < target {
+                left = mid + 1;
+            } else {
+                return mid as i32;
+            }
+        }
+        return -1;
+    }
+}
+```
