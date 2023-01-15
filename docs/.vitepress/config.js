@@ -4,6 +4,13 @@ export default defineConfig({
   title: 'AidenDocs',
   description: 'notion',
   base: '/aiden-Notes/',
+  markdown: {
+    lineNumbers: true,
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(require('markdown-it-task-lists'))
+    }
+  },
   themeConfig: {
     outline: 'deep',
     nav: [
