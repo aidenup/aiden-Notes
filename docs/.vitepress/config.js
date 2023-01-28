@@ -14,7 +14,7 @@ export default defineConfig({
   themeConfig: {
     outline: 'deep',
     nav: [
-      { 
+      {
         text: '📒 学习笔记', 
         items: [
           {
@@ -99,7 +99,8 @@ export default defineConfig({
         {
           items: [
             { text: '导读', link: '/studyDoc/algorithm/guide'},
-            { text: '二分查找', link: '/studyDoc/algorithm/array/Binary'}
+            { text: '二分查找', link: '/studyDoc/algorithm/array/Binary'},
+            { text: '移除元素', link: '/studyDoc/algorithm/array/removeElement'},
           ]
         }
       ],
