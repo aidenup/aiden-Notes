@@ -101,6 +101,7 @@ export default defineConfig({
             { text: '导读', link: '/studyDoc/algorithm/guide'},
             { text: '二分查找', link: '/studyDoc/algorithm/array/Binary'},
             { text: '移除元素', link: '/studyDoc/algorithm/array/removeElement'},
+            { text: '有序数组的平方', link: '/studyDoc/algorithm/array/sortedSquares'},
           ]
         }
       ],
