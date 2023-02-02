@@ -1,0 +1,58 @@
+# 数组
+数组是相同数据元素存储在连续内存空间中，元素在数组中的位置称为元素的索引
+
+## 二分查找
+### 算法实现
+给定一个长度为 n 的排序数组 nums ，元素从小到大排列。数组的索引取值范围为
+> 0, 1, 2, 3, n - 1
+
+使用「区间」来表示这个取值范围的方法主要有两种：
+
+1. 双闭区间 [0, n - 1]，即两个边界都包含自身；此方法下，区间 [0, 0] 仍包含一个元素；
+1. 左闭右开 [0, n)，即左边界包含自身、右边界不包含自身；此方法下，区间 [0, 0) 为空；
+
+#### 双闭区间的实现
+```js
+/* 二分查找（双闭区间） */
+function binarySearch(nums, target) {
+    // 初始化双闭区间 [0, n-1] ，即 i, j 分别指向数组首元素、尾元素
+    let i = 0, j = nums.length - 1;
+    // 循环，当搜索区间为空时跳出（当 i > j 时为空）
+    while (i <= j) {
+        let m = parseInt((i + j) / 2); // 计算中点索引 m ，在 JS 中需使用 parseInt 函数取整
+        if (nums[m] < target)          // 此情况说明 target 在区间 [m+1, j] 中
+            i = m + 1;
+        else if (nums[m] > target)     // 此情况说明 target 在区间 [i, m-1] 中
+            j = m - 1;
+        else
+            return m;                  // 找到目标元素，返回其索引
+    }
+    // 未找到目标元素，返回 -1
+    return -1;
+}
+
+```
+
+#### 左闭右开实现
+```js
+/* 二分查找（左闭右开） */
+function binarySearch1(nums, target) {
+    // 初始化左闭右开 [0, n) ，即 i, j 分别指向数组首元素、尾元素+1
+    let i = 0, j = nums.length;
+    // 循环，当搜索区间为空时跳出（当 i = j 时为空）
+    while (i < j) {
+        let m = parseInt((i + j) / 2); // 计算中点索引 m ，在 JS 中需使用 parseInt 函数取整
+        if (nums[m] < target)          // 此情况说明 target 在区间 [m+1, j) 中
+            i = m + 1;
+        else if (nums[m] > target)     // 此情况说明 target 在区间 [i, m) 中
+            j = m;
+        else                           // 找到目标元素，返回其索引
+            return m;
+    }
+    // 未找到目标元素，返回 -1
+    return -1;
+}
+
+```
+
+### 对比
