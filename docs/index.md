@@ -9,9 +9,9 @@ hero:
   name: AidenDocs
   text: Study notes
   tagline: 每天都要有收获
-  # image:
-    # src: /logo.png
-    # alt: YYG Admin UI
+  image:
+    src: /computer-desktop.png
+    alt: aiden
   actions:
     - theme: brand
       text: 快速开始
