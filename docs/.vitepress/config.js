@@ -67,8 +67,8 @@ export default defineConfig({
         {
           text: 'Guide',
           items: [
-            { text: 'index', link: 'theory/vue3/guide'},
-            { text: 'test', link: 'theory/vue3/test'},
+            { text: '导读', link: 'theory/vue3/guide'},
+            { text: 'vnode 到真实DOM 是如何转变的', link: 'theory/vue3/test'},
           ],  
         },
       ],
