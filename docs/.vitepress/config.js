@@ -81,12 +81,12 @@ export default defineConfig({
             { text: 'vnode 到真实DOM 是如何转变的', link: 'theory/vue3/Analysis/vnodeToDOM' },
           ],
         },
-        // {
-        //   text: 'code',
-        //   items: [
-        //     { text: 'one', link: 'theory/vue3/code/one' }
-        //   ]
-        // }
+        {
+          text: 'code',
+          items: [
+            { text: 'one', link: 'theory/vue3/code/one' }
+          ]
+        }
       ],
       '/theory/ts': [
         {
