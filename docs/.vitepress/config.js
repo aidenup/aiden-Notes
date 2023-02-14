@@ -123,7 +123,9 @@ export default defineConfig({
             { text: '螺旋矩阵II', link: '/studyDoc/algorithm/array/generateMatrix' },
             { text: '链表', link: '/studyDoc/algorithm/LinkedList/guide'},
             { text: '移除链表元素', link: '/studyDoc/algorithm/LinkedList/removeElements' },
-            { text: '设计链表', link: '/studyDoc/algorithm/LinkedList/MyLinkedList' }
+            { text: '设计链表', link: '/studyDoc/algorithm/LinkedList/MyLinkedList' },
+            { text: '反转链表', link: '/studyDoc/algorithm/LinkedList/reverseList' },
+
           ]
         }
       ],
