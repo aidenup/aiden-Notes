@@ -125,6 +125,7 @@ export default defineConfig({
             { text: '移除链表元素', link: '/studyDoc/algorithm/LinkedList/removeElements' },
             { text: '设计链表', link: '/studyDoc/algorithm/LinkedList/MyLinkedList' },
             { text: '反转链表', link: '/studyDoc/algorithm/LinkedList/reverseList' },
+            { text: '两两交换链表中的节点', link: '/studyDoc/algorithm/LinkedList/swapPairs' },
 
           ]
         }

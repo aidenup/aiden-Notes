@@ -9,6 +9,12 @@ class LinkNode {
     this.val = val
     this.next = next
   }
+
+  displayList(head) {
+    if(!head) return null
+    console.log(head.val)
+    this.displayList(head.next)
+  }
 }
 
 var MyLinkedList = function() {
@@ -111,7 +117,8 @@ MyLinkedList.prototype.deleteAtIndex = function(index) {
   }
   this._size--
 };
-
+module.exports.LinkNode = LinkNode
+module.exports.MyLinkedList = MyLinkedList
 /**
  * Your MyLinkedList object will be instantiated and called as such:
  * var obj = new MyLinkedList()
