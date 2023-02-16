@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
-
-const DefaultSiderBar = [
-
-]
+import { vue3, ts } from './sidebar/theory'
+import { chat } from './sidebar/project'
+import { tools } from './sidebar/tools'
+import { algorithm } from './sidebar/study'
+import { essay } from './sidebar/essay'
 
 export default defineConfig({
   title: 'AidenDocs',
@@ -68,80 +69,12 @@ export default defineConfig({
       { icon: 'twitter', link: 'https://twitter.com/aiden98289211' },
     ],
     sidebar: {
-      '/theory/vue3': [
-        {
-          text: '导读', items: [
-            { text: 'guide', link: 'theory/vue3/guide' }
-          ]
-        },
-        {
-          text: '解析',
-          items: [
-            // { text: '导读', link: 'theory/vue3/guide'},
-            { text: 'vnode 到真实DOM 是如何转变的', link: 'theory/vue3/Analysis/vnodeToDOM' },
-          ],
-        },
-        {
-          text: 'code',
-          items: [
-            { text: 'one', link: 'theory/vue3/code/one' }
-          ]
-        }
-      ],
-      '/theory/ts': [
-        {
-          text: 'Guide',
-          items: [
-            { text: 'index', link: 'theory/ts/guide' },
-          ],
-        }
-      ],
-      '/project/chat/': [
-        {
-          items: [
-            { text: '简介', link: '/project/chat/guide' },
-            { text: '更新器', link: '/project/chat/uploder' }
-          ]
-        }
-      ],
-      '/tools/': [
-        {
-          items: [
-            { text: 'algolia', link: 'tools/algolia' }
-          ]
-        }
-      ],
-      '/studyDoc/algorithm': [
-        {
-          items: [
-            { text: '导读', link: '/studyDoc/algorithm/guide' },
-            { text: '数组', link: '/studyDoc/algorithm/array/array.md' },
-            { text: '二分查找', link: '/studyDoc/algorithm/array/Binary' },
-            { text: '移除元素', link: '/studyDoc/algorithm/array/removeElement' },
-            { text: '有序数组的平方', link: '/studyDoc/algorithm/array/sortedSquares' },
-            { text: '长度最小的子数组', link: '/studyDoc/algorithm/array/minSubArrayLen' },
-            { text: '螺旋矩阵II', link: '/studyDoc/algorithm/array/generateMatrix' },
-            { text: '链表', link: '/studyDoc/algorithm/LinkedList/guide'},
-            { text: '移除链表元素', link: '/studyDoc/algorithm/LinkedList/removeElements' },
-            { text: '设计链表', link: '/studyDoc/algorithm/LinkedList/MyLinkedList' },
-            { text: '反转链表', link: '/studyDoc/algorithm/LinkedList/reverseList' },
-            { text: '两两交换链表中的节点', link: '/studyDoc/algorithm/LinkedList/swapPairs' },
-
-          ]
-        }
-      ],
-      '/essay': [
-        {
-          items: [
-            { text: '导读', link: '/essay/guide' },
-            { text: '2022年终总结', link: '/essay/2022' },
-            { text: 'vue3 hook useList', link: '/essay/useList' },
-            { text: '前端服务框架', link: '/essay/front-endServiceFramework' },
-            { text: '前端基建', link: '/essay/infrastructure' },
-            { text: 'monorepo', link: '/essay/monorepo'}
-          ]
-        }
-      ]
+      '/theory/vue3': [...vue3],
+      '/theory/ts': [...ts],
+      '/project/chat/': [...chat],
+      '/tools/': [...tools],
+      '/studyDoc/algorithm': [...algorithm],
+      '/essay': [...essay]
     },
     algolia: {
       appId: 'D0OLMUXOC6',
