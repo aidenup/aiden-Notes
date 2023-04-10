@@ -11,6 +11,7 @@ export const vue3 = [
       { text: 'vnode 到真实DOM 是如何转变的', link: 'theory/vue3/Analysis/vnodeToDOM' },
       { text: 'reactive', link: 'theory/vue3/Analysis/reactive' },
       { text: 'effect', link: 'theory/vue3/Analysis/effect' },
+      { text: 'scheduler', link: 'theory/vue3/Analysis/scheduler' },
     ],
   },
   {
