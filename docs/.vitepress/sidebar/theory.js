@@ -12,6 +12,7 @@ export const vue3 = [
       { text: 'reactive', link: 'theory/vue3/Analysis/reactive' },
       { text: 'effect', link: 'theory/vue3/Analysis/effect' },
       { text: 'scheduler', link: 'theory/vue3/Analysis/scheduler' },
+      { text: 'computed', link: 'theory/vue3/Analysis/computed' },
     ],
   },
   {
