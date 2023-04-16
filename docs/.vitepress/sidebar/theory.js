@@ -14,6 +14,7 @@ export const vue3 = [
       { text: 'scheduler', link: 'theory/vue3/Analysis/scheduler' },
       { text: 'computed', link: 'theory/vue3/Analysis/computed' },
       { text: 'watch', link: 'theory/vue3/Analysis/watch' },
+      { text: 'ref', link: 'theory/vue3/Analysis/ref' },
     ],
   },
   {
