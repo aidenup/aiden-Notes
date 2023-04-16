@@ -13,6 +13,7 @@ export const vue3 = [
       { text: 'effect', link: 'theory/vue3/Analysis/effect' },
       { text: 'scheduler', link: 'theory/vue3/Analysis/scheduler' },
       { text: 'computed', link: 'theory/vue3/Analysis/computed' },
+      { text: 'watch', link: 'theory/vue3/Analysis/watch' },
     ],
   },
   {

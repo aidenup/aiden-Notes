@@ -136,6 +136,8 @@ export function computed(getterOrOptions: any) {
 }
 ```
 
+compute 可以传入属性访问器或者是函数，如果传入的是函数，那么getter 就是这个函数，如果是属性访问器，get/set 那么 getter = get  setter = set
+
 
 
 ``` typescript
@@ -248,4 +250,3 @@ export function triggerEffects(effects: ReactiveEffect[]) {
   })
 }
 ```
-
