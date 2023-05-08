@@ -1,6 +1,5 @@
 import { createTree, TreeNode } from './utils.js'
 
-
 function increasingBST(root) {
   const res = []
   inorder(root, res)
